@@ -61,7 +61,7 @@ body {
   width: 23px;
   height: 3px;
   margin: 5px;
-  background: #2a9134;
+  background: #5b5832;
   transition: all 0.5s ease;
 }
 
@@ -89,55 +89,49 @@ body {
 }
 
 .nav-link:hover {
-  background: #2a9134;
+  background: #5b5832;
   color: #f1fffa;
 
 }
 
 .nav-active {
-  color: #f1fffa;
+  color: #1A4749;
   font-size: 25px;
   padding: 10px 20px!important;
   border-radius: 5px;
-  background: rgba(42, 145, 52, 0.6);
+  background: #A89B8C;
   transition: background 2s ease;
 }
 
 .nav-active:hover {
-  background: #2a9134;
+  background:#5b5832;
 }
 
-.search-btn {
-  background: #2a9134;
-  transition: all 1s ease;
-}
-
-.search-btn:hover {
-  color: #2a9134;
-  background: #191919;
-}
 
 /*#################banner##############*/
 
 .item-1,
 .item-2,
 .item-3 {
-  min-height: 60vh;
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 95%);
+  min-height: 70vh;
+  /*clip-path: polygon(0 0, 100% 0, 100% 85%, 0 95%);*/
 
 }
 
 
 .item-1 {
-  background: linear-gradient(to right, rgba(42, 145, 52, 0.9), rgba(42, 145, 52, 0.5)), url(img/banner-1.jpeg)center/cover fixed no-repeat;
+  background: linear-gradient(to right, rgba(91, 88, 50, 0.9), rgba(91, 88, 50, 0.5)),
+  url(img/computer2.jpg) center/cover fixed no-repeat;
 }
 
 .item-2 {
-  background: linear-gradient(to right, rgba(42, 145, 52, 0.9), rgba(42, 145, 52, 0.5)), url(img/banner-2.jpeg) center/cover fixed no-repeat;
+  background: linear-gradient(to right, rgba(91, 88, 50, 0.9), rgba(91, 88, 50, 0.5)),
+  url(img/banner-2.jpeg) center/cover fixed no-repeat;
 }
 
 .item-3 {
-  background: linear-gradient(to right, rgba(42, 145, 52, 0.9), rgba(42, 145, 52, 0.5)), url(img/banner-3.jpeg) center/cover fixed no-repeat;
+  background: linear-gradient(to right, rgba(91, 88, 50, 0.9), rgba(91, 88, 50, 0.5)),
+  url(img/banner-3.jpeg) center/cover fixed no-repeat;
 }
 
 .no-padding {
@@ -173,7 +167,7 @@ body {
 .title-underline {
   height: 5px;
   width: 250px;
-  background: #2a9134;
+  background: #5b5832;
   margin: -28px auto 0 auto;
 }
 
@@ -186,29 +180,7 @@ body {
 
 }
 
-/*###########skills##################*/
 
-.skills-icon {
-  background: #242424;
-  clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
-  transition: all 1s ease;
-
-}
-
-.skills-icon:hover {
-  background: #2a9134;
-}
-
-
-.skills-icon span {
-  font-size: 100px;
-  color: #909090;
-  transition: all 1s ease-in-out;
-}
-
-.skills-icon:hover span {
-  color: #f1fffa;
-}
 
 /*###########about############*/
 
@@ -220,7 +192,7 @@ body {
 #about {
   min-height: 40vh;
   background: #909090;
-  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+  /*clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);*/
 
 }
 
@@ -256,31 +228,11 @@ body {
 
 }
 
-/*##############video-filler###############*/
-
-#modal-filler {
-  min-height: 50vh;
-  background: linear-gradient(rgba(42, 145, 52, 0.5), rgba(42, 145, 52, 0.5)), url(img/video-filler.jpeg)center/cover fixed no-repeat;
-}
-
-#modal-filler a {
-  color: #242424;
-  font-size: 80px;
-  animation: myAnimation 3s ease infinite;
-}
-
-@keyframes myAnimation {
-  50% {
-    transform: scale(1.5);
-    color: #f1fffa;
-
-  }
-}
 
 /*#############projects##########*/
 
 #projects button {
-  background: #2a9134;
+  background: #5b5832;
   color: #f1fffa;
   transition: all 1s ease-in-out;
 }
@@ -331,7 +283,7 @@ body {
 
 #current-project {
   background: #909090;
-  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+  /*clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);*/
 }
 
 .current-project-photo {
@@ -384,280 +336,9 @@ body {
   z-index: 50;
 }
 
-/*posts*/
-
-#posts .card {
-  background: transparent!important;
-  border: none;
-  position: relative;
-}
-
-#posts .card-img-top {
-  border-radius: 0!important;
-}
-
-#posts .card-footer {
-  background: transparent;
-
-}
-
-.post-link {
-  color: #2a9134;
-  transition: all 1s ease-in-out;
-}
-
-.post-link:hover {
-  color: #dd0000;
-  text-decoration: none;
-
-}
-
-.corner-text {
-  position: absolute;
-  top: 0;
-  right: 0;
-  background: #dd0000;
-  opacity: 0;
-  transition: all 1s ease-in-out;
-}
-
-#posts .card:hover .corner-text {
-  opacity: 1;
-}
-
-/*contact-form*/
-
-#contact-form {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/banner-2.jpeg)center/cover fixed no-repeat;
-  clip-path: polygon(0 20%, 100% 0%, 100% 80%, 0 100%)
-}
-
-.height-30 {
-  min-height: 30vh;
-}
-
-#contact-form h1 {
-  color: #2a9134;
-}
-
-#contact-form .form-control {
-  background: transparent;
-  border: none;
-  border-bottom: 2px solid #f1fffa;
-  border-radius: 0;
-  color: #f1fffa;
-}
-
-.form-control::placeholder {
-  text-transform: capitalize;
-  font-size: 20px;
-  color: #f1fffa;
-}
-
-#contact-form button {
-  background: transparent;
-  border: 2px solid #f1fffa;
-  color: #f1fffa;
-  border-radius: 0;
-  transition: all 2s ease;
-}
-
-#contact-form button:hover {
-  background: #f1fffa;
-  border-color: #2a9134;
-  color: #2a9134;
-}
-
-/*############values##############*/
-
-.value {
-  position: relative
-}
-
-.value-icon {
-  font-size: 60px;
-  color: #f1fffa;
-  background: #242424;
-  padding: 25px 35px;
-  border-radius: 50%;
-  display: inline-block;
-  position: relative;
-  transition: all 2s ease;
-
-}
-
-.value-number {
-  padding: 15px;
-  background: #2a9134;
-  position: absolute;
-  border-radius: 50%;
-  display: inline-block;
-  font-size: 20px;
-  top: -12%;
-  left: 57%;
-  transition: all 2s ease;
-  color: #242424;
-}
-
-.value:hover .value-icon {
-  background: #2a9134;
-  transform: scale(1.2);
-}
-
-.value:hover .value-number {
-  background: #242424;
-  color: #f1fffa;
-  transform: scale(0.9);
-}
-
-/*###########reviews#########*/
-
-#reviews {
-  background: linear-gradient(rgba(42, 145, 52, 0.7), rgba(42, 145, 52, 0.7)), url(img/banner-1.jpeg);
-  color: #f1fffa;
-}
-
-.customer-text h3 {
-  color: #242424;
-}
-
-.customer-text h4 {
-  color: #5a5a5a;
-}
-
-.customer-text p {
-  line-height: 1.5
-}
-
-.customer-text span {
-  font-size: 40px;
-  color: #cbcb00;
-}
-
-.ratings {
-  color: #cbcb00;
-}
-
-/*#########team###############*/
-
-.member-container {
-  position: relative;
-  overflow: hidden;
-  background: #2a9134;
-}
-
-.team-image {
-  transition: all 2s ease-in-out;
-}
-
-.member-container:hover .team-image {
-  transform: translateY(-72px);
-  opacity: 0.5
-}
-
-.team-icons a {
-  color: #f1fffa;
-  font-size: 25px;
-  transition: color 1s ease;
-
-}
-
-.team-icons a:hover {
-  color: #242424;
-
-}
-
-.member-info {
-  transition: all 2s ease-in-out;
-  backface-visibility: hidden;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 10px;
-  background-color: #2a9134;
-  color: #242424;
-  transition: all 2s ease-in-out;
-  margin-bottom: -140px;
-}
-
-.member-container:hover .member-info {
-  margin-bottom: 0;
-}
-
-.member-icon a {
-  font-size: 4rem;
-  color: #f1fffa;
-  transition: all 2s ease;
-}
-
-.member-icon a:hover {
-  text-decoration: none;
-  color: #242424;
-}
-
-/*#######number###################*/
-
-.number {
-  background: #2a9134;
-  color: #242424;
-  transition: all 2s ease;
-}
-
-.number:hover {
-  background: #242424;
-  color: #2a9134;
-}
-
-/*##########contact##########################*/
-
-.height-60 {
-  min-height: 80vh;
-}
-
-#contact {
-  background: linear-gradient(rgba(42, 145, 52, 0.3), rgba(42, 145, 52, 0.3)), url(img/banner-1.jpeg)center/cover fixed no-repeat;
-}
 
 
-#contact .card {
-  background: rgba(0, 0, 0, 0.5);
-  transition: all 2s ease;
-}
 
-#contact .card:hover {
-  background: rgba(0, 0, 0, 0.8);
-}
-
-#contact .card-header {
-  color: #2a9134;
-}
-
-#contact .input-group-text {
-  background: #2a9134;
-  border-color: #2a9134;
-  color: #242424
-}
-
-#contact .card input {
-  color: #606060;
-}
-
-#contact .card input::placeholder {
-  color: #606060;
-}
-
-.contact-btn {
-  color: #f1fffa;
-  background: #2a9134;
-  transition: all 2s ease-in-out;
-}
-
-.contact-btn:hover {
-  background: transparent;
-  border-color: #2a9134;
-  color: #2a9134;
-}
 
 /*##############footer###################*/
 
@@ -678,4 +359,9 @@ footer {
 
 footer h5 {
   color: #f1fffa;
+}
+
+.image-wrapper{
+
+  object-fit: contain;
 }
